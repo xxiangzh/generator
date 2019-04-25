@@ -1,4 +1,4 @@
-package com.mmtvip.config;
+package com.xzh.generator.config;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;

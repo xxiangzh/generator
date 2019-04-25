@@ -18,16 +18,16 @@
                 password="${spring.datasource.druid.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.mmtvip.pojo" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.xzh.generator.pojo" targetProject="src/main/java">
             <property name="immutable" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="com.mmtvip.mapper" targetProject="src/main/java"  type="XMLMAPPER"/>
+        <javaClientGenerator targetPackage="com.xzh.generator.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
         
         <!--已生成的表-->
-        <table tableName="t_user_details" domainObjectName="Userdetails">
+        <table tableName="t_users" domainObjectName="User">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
