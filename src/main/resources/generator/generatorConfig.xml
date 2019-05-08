@@ -27,7 +27,7 @@
         <javaClientGenerator targetPackage="com.xzh.generator.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
         
         <!--已生成的表-->
-        <table tableName="t_users" domainObjectName="User">
+        <table tableName="user" domainObjectName="User">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
